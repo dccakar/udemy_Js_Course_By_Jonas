@@ -106,7 +106,7 @@ btnNew.addEventListener('click', function() {
   currentScore0.textContent = 0;
   currentScore1.textContent = 0;
   player = getCurrentPlayer();
-  if (player1.classList.contains('player--winner')) {
+  if (player1.classList.contains('player--winner')) {      // No need to check, js remove even if the class is not there ( also adds even if class is there)
     player1.classList.remove('player--winner');
   }
   if (player0.classList.contains('player--winner')) {
